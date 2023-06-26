@@ -1,0 +1,68 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Montserrat:ital,wght@0,100;0,200;0,300;1,300&family=Roboto:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Georama', sans-serif;
+    font-size: 62.5%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    width: 500px;
+    border: 1px solid gray;
+
+}
+.calculator-display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid gray;
+    overflow-X: auto;
+
+}
+.calculator-keypad{
+    display: flex;
+    width: 100%;
+
+}
+.keypad-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.keypad-button{
+    width: 25%;
+    padding: 15px 0;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+.keypad-button:hover{
+    filter: brightness(80%);
+    transition: filter .25s;
+    
+}
+.keypad-button.yellow{
+    background-color: yellow;
+}
+.keypad-button.large{
+    width: 50%;
+}
+.keypad-button.dark{
+    background-color: lightgray;
+}
